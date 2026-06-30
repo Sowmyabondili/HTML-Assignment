@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML5 Demo Page</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- Header -->
+    <header>
+        <h1>Advanced HTML5 Web Page</h1>
+        <p>Demonstration of Various HTML Tags</p>
+        <hr>
+    </header>
+
+    <!-- Navigation -->
+    <nav>
+        <a href="#about">About</a> |
+        <a href="#lists">Lists</a> |
+        <a href="#table">Table</a> |
+        <a href="#media">Media</a> |
+        <a href="#contact">Contact</a>
+    </nav>
+
+    <hr>
+
+    <!-- About Section -->
+    <section id="about">
+
+        <h2>About HTML</h2>
+
+        <article>
+
+            <h3>What is HTML?</h3>
+
+            <p>
+                HTML stands for HyperText Markup Language.
+                It is used to create the structure of web pages.
+                HTML uses tags to define headings, paragraphs,
+                tables, forms, images, and multimedia.
+            </p>
+
+            <a href="https://www.google.com" target="_blank">
+                Visit Google
+            </a>
+
+        </article>
+
+    </section>
+
+    <hr>
+
+    <!-- Lists Section -->
+    <section id="lists">
+
+        <h2>Lists Example</h2>
+
+        <h3>Unordered List</h3>
+
+        <ul>
+            <li>HTML</li>
+            <li>CSS</li>
+            <li>JavaScript</li>
+        </ul>
+
+        <h3>Ordered List</h3>
+
+        <ol>
+            <li>Learn HTML</li>
+            <li>Learn CSS</li>
+            <li>Learn JavaScript</li>
+        </ol>
+
+    </section>
+
+    <hr>
+
+    <!-- Table Section -->
+    <section id="table">
+
+        <h2>Student Details</h2>
+
+        <table border="1">
+
+            <tr>
+                <th>ID</th>
+                <th>Name</th>
+                <th>Course</th>
+                <th>Grade</th>
+            </tr>
+
+            <tr>
+                <td>101</td>
+                <td>Rahul</td>
+                <td>HTML</td>
+                <td>A</td>
+            </tr>
+
+            <tr>
+                <td>102</td>
+                <td>Priya</td>
+                <td>CSS</td>
+                <td>A+</td>
+            </tr>
+
+            <tr>
+                <td>103</td>
+                <td>Arjun</td>
+                <td>JavaScript</td>
+                <td>B+</td>
+            </tr>
+
+        </table>
+
+    </section>
+
+    <hr>
+
+    <!-- Media Section -->
+    <section id="media">
+
+        <h2>Image Example</h2>
+
+        <img src="https://static.vecteezy.com/system/resources/thumbnails/048/775/730/small/cute-shih-tzu-dog-in-pink-sweatshirt-and-sunglasses-on-pastel-background-photo.jpg"
+            alt="Dog Image"
+            width="400">
+
+        <br><br>
+
+        <h2>Video Example</h2>
+
+        <video width="400" controls>
+            <source src="sample-video.mp4" type="video/mp4">
+            Your browser does not support video.
+        </video>
+
+        <br><br>
+
+        <h2>Audio Example</h2>
+
+        <audio controls>
+            <source src="sample-audio.mp3" type="audio/mpeg">
+            Your browser does not support audio.
+        </audio>
+
+    </section>
+
+    <hr>
+
+    <!-- Aside -->
+    <aside>
+
+        <h2>Quick Tips</h2>
+
+        <ul>
+            <li>HTML creates webpage structure.</li>
+            <li>CSS styles webpages.</li>
+            <li>JavaScript adds interactivity.</li>
+            <li>HTML5 introduced semantic tags.</li>
+        </ul>
+
+    </aside>
+
+    <hr>
+
+    <!-- Form Section -->
+    <section id="contact">
+
+        <h2>Registration Form</h2>
+
+        <form action="#" method="post">
+
+            <label for="name">Full Name:</label><br>
+            <input type="text" id="name" required>
+
+            <br><br>
+
+            <label for="email">Email:</label><br>
+            <input type="email" id="email" required>
+
+            <br><br>
+
+            <label for="password">Password:</label><br>
+            <input
+                type="password"
+                id="password"
+                required
+                minlength="8"
+                pattern="^(?=.*[a-z])(?=.*[A-Z])(?=.*[0-9])(?=.*[@$!%*?&])[A-Za-z0-9@$!%*?&]{8,}$"
+                title="Minimum 8 characters with uppercase, lowercase, number and special character">
+
+            <br><br>
+
+            <label>Gender:</label><br>
+
+            <input type="radio" name="gender" value="Male" required>
+            Male
+
+            <input type="radio" name="gender" value="Female">
+            Female
+
+            <input type="radio" name="gender" value="Other">
+            Other
+
+            <br><br>
+
+            <label>Skills:</label><br>
+
+            <input type="checkbox" value="HTML"> HTML
+            <input type="checkbox" value="CSS"> CSS
+            <input type="checkbox" value="JavaScript"> JavaScript
+
+            <br><br>
+
+            <label>Country:</label><br>
+
+            <select required>
+                <option value="">Select Country</option>
+                <option>India</option>
+                <option>USA</option>
+                <option>UK</option>
+                <option>Canada</option>
+            </select>
+
+            <br><br>
+
+            <label>Date of Birth:</label><br>
+            <input type="date" required>
+
+            <br><br>
+
+            <label>Message:</label><br>
+
+            <textarea rows="5" cols="40" required></textarea>
+
+            <br><br>
+
+            <button type="submit">Submit</button>
+            <button type="reset">Reset</button>
+
+        </form>
+
+    </section>
+
+    <hr>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2026 HTML5 Demo Page | Designed by Student</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
